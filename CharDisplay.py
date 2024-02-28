@@ -167,6 +167,21 @@ surChk = ttk.Checkbutton(skillFrame, text = "Survival (Wis)")
 surChk.grid(column = 0, row = 17, sticky = (W, E))
 
 #Frame B2 -> HP/Max HP, AC, init, speed
+combatFrame = ttk.Frame(overFrame, padding = 0)
+combatFrame.grid(column = 2, row = 1, sticky = (N, W, E, S))
+
+armorClass = StringVar()
+acFrame = ttk.Frame(combatFrame, padding = 0)
+acFrame.grid(column = 0, row = 0, sticky = (N, W))
+acTxt = ttk.Entry(titleFrame, width = 20, textvariable = armorClass)
+acTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
+ttk.Label(acFrame, text = "AC").grid(column = 0, row = 1, sticky = (W, E))
+
+####jumping off point for next time
+
+
+
+
 
 #Frames in row A: Name, Player, Race, total level
 
@@ -176,7 +191,7 @@ for child in overFrame.winfo_children():
     child.grid_configure(padx=5, pady=5)
 
 
-intTxt.focus()
+charTxt.focus()
 
 charScreen.mainloop()
 
