@@ -59,7 +59,7 @@ ttk.Label(lvlFrame, text = "Total Level").grid(column = 0, row = 1, sticky = (W,
 
 
 
-#statFrame Start
+#statFrame Start B0
 statFrame = ttk.Frame(overFrame, padding = 0)
 statFrame.grid(column = 0, row = 1, sticky = (N, W, E, S))
 
@@ -108,9 +108,63 @@ chaTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
 ttk.Label(chaFrame, text = "CHA").grid(column = 0, row = 1, sticky = (W, E))
 
 #Frame B1 -> skills
+skillFrame = ttk.Frame(overFrame, padding = 0)
+skillFrame.grid(column = 1, row = 1, sticky = (N, W, E, S))
 
+#add variable to checkbox text later that updates based on current char's total add
+acroChk = ttk.Checkbutton(skillFrame, text = "Acrobatics (Dex)")
+acroChk.grid(column = 0, row = 0, sticky = (W, E))
 
+ahChk = ttk.Checkbutton(skillFrame, text = "Animal Handling (Wis)")
+ahChk.grid(column = 0, row = 1, sticky = (W, E))
 
+arChk = ttk.Checkbutton(skillFrame, text = "Arcana (Int)")
+arChk.grid(column = 0, row = 2, sticky = (W, E))
+
+athChk = ttk.Checkbutton(skillFrame, text = "Athletics (Str)")
+athChk.grid(column = 0, row = 3, sticky = (W, E))
+
+dcpChk = ttk.Checkbutton(skillFrame, text = "Deception (Cha)")
+dcpChk.grid(column = 0, row = 4, sticky = (W, E))
+
+hisChk = ttk.Checkbutton(skillFrame, text = "History (Int)")
+hisChk.grid(column = 0, row = 5, sticky = (W, E))
+
+insChk = ttk.Checkbutton(skillFrame, text = "Insight (Wis)")
+insChk.grid(column = 0, row = 6, sticky = (W, E))
+
+inmChk = ttk.Checkbutton(skillFrame, text = "Intimidation (Cha)")
+inmChk.grid(column = 0, row = 7, sticky = (W, E))
+
+invChk = ttk.Checkbutton(skillFrame, text = "Investigation (Int)")
+invChk.grid(column = 0, row = 8, sticky = (W, E))
+
+medChk = ttk.Checkbutton(skillFrame, text = "Medicine (Wis)")
+medChk.grid(column = 0, row = 9, sticky = (W, E))
+
+natChk = ttk.Checkbutton(skillFrame, text = "Nature (Int)")
+natChk.grid(column = 0, row = 10, sticky = (W, E))
+
+perChk = ttk.Checkbutton(skillFrame, text = "Perception (Wis)")
+perChk.grid(column = 0, row = 11, sticky = (W, E))
+
+prfChk = ttk.Checkbutton(skillFrame, text = "Performance (Cha)")
+prfChk.grid(column = 0, row = 12, sticky = (W, E))
+
+prsChk = ttk.Checkbutton(skillFrame, text = "Persuasion (Cha)")
+prsChk.grid(column = 0, row = 13, sticky = (W, E))
+
+relChk = ttk.Checkbutton(skillFrame, text = "Religion (Int)")
+relChk.grid(column = 0, row = 14, sticky = (W, E))
+
+sltChk = ttk.Checkbutton(skillFrame, text = "Sleight of Hand (Dex)")
+sltChk.grid(column = 0, row = 15, sticky = (W, E))
+#begging for typos here, but we'll see
+stlChk = ttk.Checkbutton(skillFrame, text = "Stealth (Dex)")
+stlChk.grid(column = 0, row = 16, sticky = (W, E))
+
+surChk = ttk.Checkbutton(skillFrame, text = "Survival (Wis)")
+surChk.grid(column = 0, row = 17, sticky = (W, E))
 
 #Frame B2 -> HP/Max HP, AC, init, speed
 
