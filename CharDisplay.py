@@ -171,13 +171,25 @@ combatFrame = ttk.Frame(overFrame, padding = 0)
 combatFrame.grid(column = 2, row = 1, sticky = (N, W, E, S))
 
 armorClass = StringVar()
-acFrame = ttk.Frame(combatFrame, padding = 0)
+acFrame = ttk.Frame(combatFrame, padding = 5)
 acFrame.grid(column = 0, row = 0, sticky = (N, W))
-acTxt = ttk.Entry(titleFrame, width = 20, textvariable = armorClass)
+acTxt = ttk.Entry(acFrame, width = 5, textvariable = armorClass)
 acTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
 ttk.Label(acFrame, text = "AC").grid(column = 0, row = 1, sticky = (W, E))
 
-####jumping off point for next time
+init = StringVar()
+initFrame = ttk.Frame(combatFrame, padding = 5)
+initFrame.grid(column = 1, row = 0, sticky = (N, W, E))
+initTxt = ttk.Entry(initFrame, width = 5, textvariable = init)
+initTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
+ttk.Label(initFrame, text = "AC ()").grid(column = 0, row = 1, sticky = (W, E))
+
+movement = StringVar()
+moveFrame = ttk.Frame(combatFrame, padding = 5)
+moveFrame.grid(column = 2, row = 0, sticky = (N, E))
+moveTxt = ttk.Entry(moveFrame, width = 5, textvariable = movement)
+moveTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
+ttk.Label(moveFrame, text = "Movement").grid(column = 0, row = 1, sticky = (W, E))
 
 
 
