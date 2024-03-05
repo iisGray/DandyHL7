@@ -1,0 +1,14 @@
+User states:
+"part of my motivation is figuring out the priority of stats, so that the most frequently consulted ones appear earliest in the format.
+
+The idea being that I want to minimize the cognitive load when running a game.
+
+but also it would make a good file transfer protocol between game runners, so that we can send each other conceptual objects between games.
+
+
+once I have a solid sense of the most useful stats then I would also plan on trying to come up with a data visualization that takes this format as input, and converts character stats into easily readable symbols that look all mystical and shit. thus encoding them in a visual language.
+
+
+I prefer python as I have been looking for an excuse to learn git
+
+and as far as a minimally viable product goes, it's hard to say because in a lot of ways I want to use this as a notation system to help me do as much as possible in my head, and just have a minimalist system of notes and a database to reference.... so I would go with your thoughts on it
