@@ -191,11 +191,30 @@ moveTxt = ttk.Entry(moveFrame, width = 5, textvariable = movement)
 moveTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
 ttk.Label(moveFrame, text = "Movement").grid(column = 0, row = 1, sticky = (W, E))
 
+tempHP = StringVar()
+tempHPFrame = ttk.Frame(combatFrame, padding = 5)
+tempHPFrame.grid(column = 0, row = 1, sticky = (N, W))
+tempHPTxt = ttk.Entry(tempHPFrame, width = 5, textvariable = tempHP)
+tempHPTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
+ttk.Label(tempHPFrame, text = "Temp HP").grid(column = 0, row = 1, sticky = (W, E))
+
+currHP = StringVar()
+currHPFrame = ttk.Frame(combatFrame, padding = 5)
+currHPFrame.grid(column = 1, row = 1, sticky = (N, W, E))
+currHPTxt = ttk.Entry(currHPFrame, width = 5, textvariable = currHP)
+currHPTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
+ttk.Label(currHPFrame, text = "Current HP").grid(column = 0, row = 1, sticky = (W, E))
+
+maxHP = StringVar()
+maxHPFrame = ttk.Frame(combatFrame, padding = 5)
+maxHPFrame.grid(column = 2, row = 1, sticky = (N, E))
+maxHPTxt = ttk.Entry(maxHPFrame, width = 5, textvariable = maxHP)
+maxHPTxt.grid(column = 0, row = 0, sticky = (N, W, E, S))
+ttk.Label(maxHPFrame, text = "Max HP").grid(column = 0, row = 1, sticky = (W, E))
 
 
+#Would like to add a series of buttons to the right that will change which frames are visible, essentially creating a page system. Where another page could have equipment and currency. Another tab could have tools, languages, and personality/appearance info, another could have spells, and maybe lastly a page specifically for combat actions. All of these items are stretch goals however. More important than these are a import and save buttons, but in order for these to be useful, the character object must be defined, and a process for creating and reading such files must be generated as well.
 
-
-#Frames in row A: Name, Player, Race, total level
 
 #stat bonus = (stat - 10) / 2 (floor)
 
